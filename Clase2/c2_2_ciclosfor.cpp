@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "stdio.h"
 
 int main(){
     // forma facil pero poco manual de definir un arreglo
