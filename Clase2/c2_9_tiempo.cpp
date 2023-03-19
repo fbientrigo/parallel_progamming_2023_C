@@ -1,9 +1,9 @@
 /*
 Programa que mide el tiempo de una funcion
 */
-#include <stdio.h> //contiene printf
-#include <stdlib.h> //contiene malloc
-#include <time.h> //contiene el reloj
+#include "stdio.h" //contiene printf
+#include "stdlib.h" //contiene malloc
+#include "time.h" //contiene el reloj
  
 
 void poblar_array(int* array, int xN, int yN){
