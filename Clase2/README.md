@@ -99,6 +99,7 @@ El profe se encargara de que tengamos cuentas para KOSMOS, y ahi se procedera a 
 
 # Metricas
 ### Speedup:
+
 $$
 S = \frac{T(1)}{T(p)}
 $$
@@ -106,11 +107,13 @@ donde $T(p)$ es el tiempo de `p` procesadores
 
 ### Eficiencia:
 El speedup per procesador
+
 $$
 E = \frac{S}{p}
 $$
 
 ### Costo
+
 $$
 C = T(p) * p
 $$
@@ -125,4 +128,3 @@ Esta version es mas complicada porque variamos 2 cantidades;
 - Razon de computa-a-comunicacion: este es el concepto por el que la paralelizacion no siempre funciona, a veces necesitamos comunicacion entre los distintos procesos; este tiempo de comunicacion posee un coste.
 Queremos tener el porcentaje maximo de computo y minimizar la comunicacion (que es tiempo perdido).
 
-### ejemplo: sumar un arreglo
