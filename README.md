@@ -1,7 +1,18 @@
 # Programación Paralela
 
 El curso está impartido en C; sin embargo, el libro utiliza comúnmente C++; el cual es un lenguaje más moderno y utilizado en la industria,
-debido a que es retrocompatible en su mayoría los archivos están escritos en C++; sin embargo, a la hora de utilizar `malloc` preferí irme a C para evitar ciertos choques en la evolución del programa. 
+debido a que es retrocompatible en su mayoría los archivos están escritos en C++; sin embargo, a la hora de utilizar `malloc` es algo distinto, haz de realizar la conversión
+
+versión en C
+```c
+double* x;
+x = malloc(N * sizeof(double));
+```
+versión en C++
+```c++
+double* x;
+x = (double*) malloc(N * sizeof(double)); //conversión de tipo de dato de void a double, para obtener la ubicación
+```
 
 # Carpetas
 - `ClaseX` carpeta que separa una clase, dentro posee un resumen de esta en formato Markdown llamada `README.md` por lo que si la ves en github tendrás fórmulas y códigos en bellos formatos, los ficheros se encuentran en orden que fueron dictados en clases `c{X}_{orden}_descripcion.c`. Se recomienda leerlos, pues poseen varios comentarios
