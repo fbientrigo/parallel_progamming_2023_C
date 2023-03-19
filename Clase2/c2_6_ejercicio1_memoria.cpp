@@ -27,7 +27,7 @@ int main(){
     int xN = 10;
     int yN = 10;
 
-    int* array = malloc(xN * yN * sizeof(int));
+    int* array = (int*) malloc(xN * yN * sizeof(int));
 
     poblar_array(array, xN, yN);
 

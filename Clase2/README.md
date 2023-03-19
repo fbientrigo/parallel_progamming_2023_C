@@ -5,7 +5,8 @@ Poblar o iterar sobre un arreglo bidimensional, solemos pensarlos de manera uni 
 ```
 for (int i=0; i<xN; i++){
     for (int j=0; j<yN; j++){
-        array[i * Ny + j]
+        // array[i][j] = i + j; // es equivalente a realizar lo de abajo
+        array[i * Ny + j] = i+j;  
     }
 }
 ```
@@ -15,6 +16,49 @@ Pues asi nos aproximamos mas al modelo que tiene la computadora fisica de los da
 La idea del curso es paralelizar programas, metodos de machine learning, paralelizaciones, programas que requieran de muchos calculos.
 
 Tendremos ciclos extremadamente largos, la paralelizacion es comunmente dividir el trabajo de los ciclos en distinos hilos llamados `threads`
+
+es posible utilizar `OpenMP` facilmente, ya viene pre instalado en `gcc`:
+
+```c++
+#include "stdio.h"
+#include "omp.h"
+
+int main(){
+
+    // se usa para compilar en paralelo el siguiente bloque
+    #pragma omp parallel
+    {
+       int n;
+       n = omp_get_num_threads();
+
+       printf("Numero threads: %d\n",n);
+    }
+
+}
+```
+
+la parte de compilar es importante, ya que requiere especificar que utilizamos `OpenMP`, es el flag `-fopenmp`
+
+```bash
+g++ -fopenmp .\c2_8_librerias.cpp -o 8_librerias.exe
+```
+
+### Incluir flags personalizados en CMake
+Basta con modificar la `CMakeLists.txt`, agregando las flags en las variables `CMAKE_C_FLAGS` y `CMAKE_CXX_FLAGS`
+
+```cmake
+cmake_minimum_required(VERSION 3.1)
+
+project(myproject)
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fopenmp")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
+
+add_executable(myexecutable main.c)
+
+```
+
+
 
 ## Optimizacion
 Es buena idea partir por la optimizacion antes de paralelizar;
@@ -51,6 +95,7 @@ en resumen, cuando escribimos un programa queremos buscar posibilidades de optim
 
 ## Instalar Librerias
 El profe se encargara de que tengamos cuentas para KOSMOS, y ahi se procedera a continuar esa parte.
+
 
 # Metricas
 ### Speedup:

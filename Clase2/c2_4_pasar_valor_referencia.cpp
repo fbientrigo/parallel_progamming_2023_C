@@ -18,15 +18,26 @@ int main(){
     y = actualizar_x(x);
 
     printf("pasando por valor \n");
-    printf("%d %d\n", x, y);
+    printf("x: %d\t y: %d\n", x, y);
 
     // pasar por referencia
     int x2 = 10;
     int* p;
 
-    p = &x;
+    p = &x; // pasamos la referencia al pointer
     actualizar_x2(p);
 
     printf("pasando por referencia (punteros) \n");
-    printf("%d \n", x);
+    printf("x: %d \n", x);
+
+    // ==========
+    // pasar por valor
+    int x3 = 10;
+
+    // modificamos y =11; pero el x se mantiene x = 10
+    actualizar_x2(&x3);
+
+    printf("pasando por referencia (&x) \n");
+    printf("x: %d\n", x3); 
+
 }

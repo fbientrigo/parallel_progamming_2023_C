@@ -19,15 +19,16 @@ int main()
     // inicializamos un reloj
     clock_t t;
     t = clock(); // calcula el tiempo actual
-    printf("Tiempo actual: %f \n", (double) t);
+    printf("Tiempo inicial: %f \n", (double) t);
+    printf("Clocks per Second variable: %d \n", CLOCKS_PER_SEC);
 
     int xN = 10000;
     int yN = 10000;
-    int* array = malloc(xN * yN * sizeof(int));
+    int* array = (int*) malloc(xN * yN * sizeof(int));
     poblar_array(array, xN, yN);
 
     t = clock() - t;
-    double time_taken = ((double)t) /CLOCKS_PER_SEC; // in seconds
+    double time_taken = ( (double)t ) /CLOCKS_PER_SEC; // in seconds
  
     printf("El tiempo: %f \n", time_taken);
 

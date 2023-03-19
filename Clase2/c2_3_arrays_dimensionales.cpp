@@ -14,7 +14,7 @@ int main(){
     printf("%lu \n", sizeof(phi));
 
     // se prefiere guardar de esta manera
-    double* psi = malloc(xN * yN * sizeof(double));
+    double* psi = (double*) malloc(xN * yN * sizeof(double));
 
     for (int i =0; i < xN; i++) {
         for (int j = 0; j < yN; j++) {

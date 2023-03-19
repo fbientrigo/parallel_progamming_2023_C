@@ -8,7 +8,7 @@ versión en C
 double* x;
 x = malloc(N * sizeof(double));
 ```
-versión en C++
+versión en C++, que aparte es retrocompatible, es posible correr este codigo perfectamente en C, así que es una buena practica convertir el output de malloc de `void -> pointer`
 ```c++
 double* x;
 x = (double*) malloc(N * sizeof(double)); //conversión de tipo de dato de void a double, para obtener la ubicación
