@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "stdio.h"
+#include "stdlib.h"
 
 int main(int argc, char **argv){
     printf("La cantidad de argumentos %d\n",argc);
