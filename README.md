@@ -1,15 +1,21 @@
 # Programación Paralela
 
-El curso esta impartido en C, sin embargo el libro utiliza comúnmente C++; el cual es un lenguaje más moderno y utilizado en la industria,
-debido a que es retrocompatible en su mayoria los archivos estan escritos en C++.
+El curso está impartido en C; sin embargo, el libro utiliza comúnmente C++; el cual es un lenguaje más moderno y utilizado en la industria,
+debido a que es retrocompatible en su mayoría los archivos están escritos en C++; sin embargo, a la hora de utilizar `malloc` preferí irme a C para evitar ciertos choques en la evolución del programa. 
 
-### Compilación
-Por tanto es posible compilarlos utilizando `gcc` haciendo links a la librería estándar de C++; sin embargo, `gcc` al encontrar la extensión de cpp automáticamente entenderá que se trata de un archivo de este tipo 
+# Carpetas
+- `ClaseX` carpeta que separa una clase, dentro posee un resumen de esta en formato Markdown llamada `README.md` por lo que si la ves en github tendrás fórmulas y códigos en bellos formatos, los ficheros se encuentran en orden que fueron dictados en clases `c{X}_{orden}_descripcion.c`. Se recomienda leerlos, pues poseen varios comentarios
+- `Algoritmos` implementación de algoritmos para optimizar tareas dentro de un programa, encontrarás el nombre del algoritmo en la carpeta y aquellos con apellido `cmake` utilizan el programa para crear una compilación más elegante
+
+
+# Compilación
+## gcc / g++
+Por tanto, es posible compilarlos utilizando `gcc` haciendo links a la librería estándar de C++; sin embargo, `gcc` al encontrar la extensión de cpp automáticamente entenderá que se trata de un archivo de este tipo 
 ```bash
 gcc archivo.cpp -lstdc++
 ```
 
-tambien es posible especificar el lenguaje de compilación
+también es posible especificar el lenguaje de compilación
 ```bash
 gcc -x c++ archivo.cpp 
 ```
@@ -19,9 +25,16 @@ Aunque en todo caso es recomendado, por comodidad utilizar el compilador en su v
 g++ archivo.cpp
 ```
 
-A este punto solo se trabaja con scripts únicos y headers, por tanto, aún no hay nada que necesite la implementación de varios links o CMake.
+## Uso de CMake
+Dentro de la carpeta de Algoritmos puedes encontrar el readme que guia para instalar CMake y Ninja, para luego aplicarlos a programas simples;
+CMake se encarga del linking de distintos scripts para así escribir tus propias librerias.
+```
+sudo apt-get install ninja-build
+sudo apt-get install cmake
+```
 
-### Libro
+
+# Libro
 El Libro utilizado es:
 ```
 Parallel Programming - Concepts and Practice | B. Schmidt., J. González-Domínguez., C. Hundt. & M. Schlarb.
