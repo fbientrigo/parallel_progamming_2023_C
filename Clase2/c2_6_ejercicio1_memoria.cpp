@@ -3,8 +3,8 @@ Poblar un array bidimensional 10*10 elementos,
 usar el poblar array
 */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "stdio.h"
+#include "stdlib.h"
 
 void poblar_array(int* array, int xN, int yN){
     // en el ciclo ocurre la diferencia
