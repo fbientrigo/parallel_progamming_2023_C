@@ -103,6 +103,7 @@ El profe se encargara de que tengamos cuentas para KOSMOS, y ahi se procedera a 
 $$
 S = \frac{T(1)}{T(p)}
 $$
+
 donde $T(p)$ es el tiempo de `p` procesadores
 
 ### Eficiencia:
