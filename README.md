@@ -18,6 +18,8 @@ x = (double*) malloc(N * sizeof(double)); //conversión de tipo de dato de void 
 - `ClaseX` carpeta que separa una clase, dentro posee un resumen de esta en formato Markdown llamada `README.md` por lo que si la ves en github tendrás fórmulas y códigos en bellos formatos, los ficheros se encuentran en orden que fueron dictados en clases `c{X}_{orden}_descripcion.c`. Se recomienda leerlos, pues poseen varios comentarios
 - `Algoritmos` implementación de algoritmos para optimizar tareas dentro de un programa, encontrarás el nombre del algoritmo en la carpeta y aquellos con apellido `cmake` utilizan el programa para crear una compilación más elegante
 
+# Instalación
+Utilizo Windows 10, por tanto posee una serie de pasos extras para poder correr limpiamente compiladores de C y otras herramientas
 
 # Compilación
 ## gcc / g++
