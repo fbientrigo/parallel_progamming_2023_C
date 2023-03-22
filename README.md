@@ -19,7 +19,12 @@ x = (double*) malloc(N * sizeof(double)); //conversión de tipo de dato de void 
 - `Algoritmos` implementación de algoritmos para optimizar tareas dentro de un programa, encontrarás el nombre del algoritmo en la carpeta y aquellos con apellido `cmake` utilizan el programa para crear una compilación más elegante
 
 # Instalación
-Utilizo Windows 10, por tanto posee una serie de pasos extras para poder correr limpiamente compiladores de C y otras herramientas
+Utilizo Windows 10, por tanto posee una serie de pasos extras para poder correr limpiamente compiladores de C y otras herramientas, se utiliza:
+
+- MYSYS2 para actualizar repositorios en una linux way
+- Mingw-w64: entorno de desarrolo de software que incluye un puerto de los compiladores GCC
+
+Revisesé el README.md dentro de la carpeta de `0_Instalacion`
 
 # Compilación
 ## gcc / g++

@@ -3,14 +3,14 @@
 
 /*
 librerias estandar de C
-#include <stdio.h>
-#iclude <stdlib.h
+#include "stdio.h"
+#iclude "stdlib.h"
 */
 
 int main(int argc, char** argcv) {
     //tipos basicos
     int numero1 = -3;
-    uint numero2 = 4;
+    unsigned int numero2 = 4;
     float numero3 = 3.1415;
     double numero4 = 3.1415;
 
