@@ -1,8 +1,11 @@
 {
 	"folders": [
-		{
-			"path": "."
-		}
+        {
+            "path": "."
+        },
+        {
+            "path": "../programacion_paralela_graeme"
+        }
     ],
     "settings": {}
 }
