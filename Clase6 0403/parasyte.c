@@ -9,7 +9,6 @@ void plain_vecadd(float *A, float *B, float *C, uint64_t N){
 
     todos los vectores deben ser iguales
     */
-
     for (uint64_t i = 0; i<N; i++ ){
         C[i] = A[i] + B[i]; 
     }
