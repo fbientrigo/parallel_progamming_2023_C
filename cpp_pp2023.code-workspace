@@ -7,5 +7,9 @@
             "path": "../programacion_paralela_graeme"
         }
     ],
-    "settings": {}
+    "settings": {
+        "files.associations": {
+            "immintrin.h": "c"
+        }
+    }
 }

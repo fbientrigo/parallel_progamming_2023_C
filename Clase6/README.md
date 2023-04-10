@@ -123,3 +123,7 @@ como se observa es varios ordenes de magnitud de diferencia, como 4 ordenes de m
 
 - aplicar tecnicas de manejo de memoria avanzadas; para la ecuación de Poisson con el metodo de Jacobi
 
+se puede investigar más en
+- _mm256_load_ps. (2021). Intel. https://www.intel.com/content/www/us/en/docs/cpp-compiler/developer-guide-reference/2021-9/mm256-load-ps.html
+
+‌

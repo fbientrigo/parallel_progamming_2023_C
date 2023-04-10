@@ -231,6 +231,24 @@ entonces el speed up optimo se lograria con $p \approx 100$
 - existe un limite de cuantos procesadores nos entregan buenos resultados, usar demasiados conlleva a que se vuelva mas lento
 - el speed up optimo deende mucho de $\gamma$, pues si el tiempo de comunicacion es muy grande, sera mejor utilizar menos EP (menos procesadores)
 
+Por ejemplo si dividiesemos una suma simple como la que contiene el progrma `c3_2_pragma_simple.c`
+notaras que la version paralelizada corre mas lenta que la sin paralelizar, todo debido a la velocidad de comunicacion (cuello de botella de von Neumman)
+
+```bash
+$ Clase3/ gcc .\c3_2_pragma_simple.c -o 2_simple.exe   
+$ Clase3/ .\2_simple.exe
+Comenzando Programa: 
+Suma sin paralelizar
+
+Tiempo sin paralelizar: 0.005000 [s]
+Suma total: 499500
+=================
+Suma paralelizada
+Suma total: 499500
+
+Tiempo del programa paralelizado: 0.017000 [s]
+```
+
 ___
 
 # Memoria Distribuida Compartida
@@ -290,7 +308,18 @@ for (i=1; i<n; i++) {
 
 - en su mayoria paralelizaremos ciclos `for`
 
-(diagrama de paralelizar este algoritmo)
+Una posible paralelizacion va de la siguiente forma:
+![paralelizar suma](figs/paralelizar_suma.png)
+
+se puede encontrar una implementacion de este algoritmo hecho como un reto en:
+
+```bash
+gcc c3_3_paralelizar_suma.c -fopenmp -o 3_paralelizar_suma.exe
+```
+
+se encuentra implementado para $N=2^5$ para ser capaz de visualizar, pero se puede intentar con cualquier multiplo distinto, prueba modificarlo ;)
+
+debemos especificar, esto no es una suma mas rapida, pues tenemos una cantidad de tiempo que perdemos al comunicar datos; pero es un gran ejemplo de como funcionaria una paralelizacion en este tipo de casos donde tenemos intercomunicacion entre los componentes.
 
 ___
 
