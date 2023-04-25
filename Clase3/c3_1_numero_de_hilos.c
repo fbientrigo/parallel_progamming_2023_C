@@ -12,12 +12,12 @@ g++ -fopenmp c3_1_numero_de_hilos.cpp -o 1_hilos.exe
 int main(){
 
     // se usa para compilar en paralelo el siguiente bloque
-    #pragma omp parallel
+    #pragma omp parallel num_threads(4)
     {
-       int n;
-       n = omp_get_num_threads();
+        int i = omp_get_thread_num(); //numero del thread
+        int n = omp_get_num_threads(); // total de threads
 
-       printf("Numero threads: %d\n",n);
+       printf("Thread %d, con numero total threads: %d\n",i,n);
     }
 
 }

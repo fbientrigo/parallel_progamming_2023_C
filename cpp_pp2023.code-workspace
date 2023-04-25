@@ -9,7 +9,8 @@
     ],
     "settings": {
         "files.associations": {
-            "immintrin.h": "c"
+            "immintrin.h": "c",
+            "iostream": "cpp"
         }
     }
 }

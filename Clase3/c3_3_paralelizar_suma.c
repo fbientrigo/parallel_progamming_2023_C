@@ -3,6 +3,12 @@
 #include "time.h"
 #include "omp.h"
 
+/*
+Nota, este codigo es mas avanzado;
+    fue parte de una investigacion para resolver un problema complejo
+    se revisitara en la clase 8
+
+*/
 
 void jump(int i, int b) {
     if (i != 0) {

@@ -3,6 +3,17 @@
 El curso está impartido en C; sin embargo, el libro utiliza comúnmente C++; el cual es un lenguaje más moderno y utilizado en la industria,
 debido a que es retrocompatible en su mayoría los archivos están escritos en C++; sin embargo, a la hora de utilizar `malloc` es algo distinto, haz de realizar la conversión
 
+
+## Lista de clases y resumen
+
+- Clase3: OpenMP aplicado en sumas, se pasa por encima
+
+- Clase6: Una vectorizacion simple para la ecuacion de Poisson
+- Clase7: Repaso del uso de vectorizacion para resolver Poisson utilizando diferencias para calcular el error del programa
+- Clase8: OpenMP, el uso de hilos en profundidad
+
+
+## inicio:
 versión en C
 ```c
 double* x;
