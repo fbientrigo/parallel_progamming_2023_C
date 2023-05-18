@@ -17,9 +17,6 @@ void plain_vecadd(float *A, float *B, float *C, uint64_t N){
 void avx2_vecadd(float *A, float *B, float *C, uint64_t N){
     /*instrucciones avx2 dados por intel; permite agregar elementos en paralelo
     AVX2 -> advanced vector extension 2
-
-    permite 
-    
     */
     __m256 X;
     for (uint64_t i=0; i<N; i += 8){

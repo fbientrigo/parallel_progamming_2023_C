@@ -4,6 +4,8 @@
 #include <stdbool.h>
 #include <float.h>
 
+#include <omp.h>
+
 #define num_pixels 784
 #define num_train 60000
 #define num_test 10000
@@ -14,10 +16,6 @@ Interactua con los binarios
 t10k*
 train-images*
 train-labels*
-
-
-
-
 */
 
 
