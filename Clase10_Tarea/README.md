@@ -2,9 +2,20 @@
 Es una lista de ejercicios que provienen del libro del curso;
 haz el intento de completarlos
 
-Mi respuesta se encuentra en los distintos archivos.c
+Mi respuesta se encuentra en los distintos `archivos.c` y `respuestas.md`
 
-# 1.- Cache Lines y Vectorización
+[Respuesta a 1](Respuesta1.md)
+[Respuesta a 2](Respuesta2.md)
+[Respuesta a 8](Respuesta8.md)
+
+
+# 1.- Analiza el speed up y eficiencia
+Del algoritmo de la sección 1.1, con n=2048, 
+- asume que un PE puede sumar dos numeros 1 ms
+- un PE puede enviar $m$ numeros en $2 + m/1024$ ms
+- Varia el numero de PE de 1 a 1024 en potencias de 2
+
+# 2.- Cache Lines y Vectorización
 Consideresé una CPU con una linea de 
 - cache de largo `L = sizeof(float) * 16` 
 - dos matrices cuadradas $A, B \in float^{N \times N}$
@@ -50,24 +61,10 @@ iv) Comparación de tiempos de ejecución (runtime)
 	b) comparalos experimentalmente
 
 
-# 2.- "Loop Unrolling for Max Reduction" (pg 73)
-La siguiente función (secuencial) computa el maxio de un arreglo de floats:
-
-```c++
-float plain_max(float* data, uint64_t lenght) {
-	float max = - INFINITY;
-
-	for(uint64_t i=0; i<lenght; i++)
-		max = std::max(max, data[i]);
-
-	return max;
-}
-```
 
 
 
-
-# 3.- "Vectorized Jacobi 1D Stencil" (pg 75)
+# 8.- "Vectorized Jacobi 1D Stencil" (pg 75)
 La iteración de Jacobi es un metodo con gran variedad de aplicaciones. Un simple stencil de 3 puntos se puede implementar con el siguiente fragmento de codigo:
 
 ```c++
