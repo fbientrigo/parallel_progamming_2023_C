@@ -5,7 +5,9 @@ haz el intento de completarlos
 Mi respuesta se encuentra en los distintos `archivos.c` y `respuestas.md`
 
 [Respuesta a 1](Respuesta1.md)
+
 [Respuesta a 2](Respuesta2.md)
+
 [Respuesta a 8](Respuesta8.md)
 
 
