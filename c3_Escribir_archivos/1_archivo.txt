@@ -1,0 +1,6 @@
+Hola, este es un archivo de texto.
+Aquí podemos escribir cualquier información que queramos guardar.
+Por ejemplo, números, cadenas de texto, etc.
+Número: 123
+Cadena: Este es un ejemplo de cadena.
+Valor flotante: 3.14
