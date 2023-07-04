@@ -10,7 +10,9 @@
     "settings": {
         "files.associations": {
             "immintrin.h": "c",
-            "iostream": "cpp"
+            "iostream": "cpp",
+            "omp.h": "c",
+            "stdlib.h": "c"
         }
     }
 }

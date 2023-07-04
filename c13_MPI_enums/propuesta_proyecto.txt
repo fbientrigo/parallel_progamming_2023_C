@@ -1,0 +1,3 @@
+Simulacion N cuerpos no cosmologica
+- particle mesh
+- resolver la ecuacion de Poisson en el contexto cosmologico
