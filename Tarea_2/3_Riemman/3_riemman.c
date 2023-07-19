@@ -86,7 +86,7 @@ int main(int argc, char** argv) {
     printf("Sección paralelizada: \n");
     
     int num_threads = omp_get_max_threads();
-    int loop_section = N / num_threads;
+    int loop_section = N / num_threads; // largo de una sección [,,, | ,,, | ,,, | ,,, | ,,, |]
     
     #pragma omp parallel
     {

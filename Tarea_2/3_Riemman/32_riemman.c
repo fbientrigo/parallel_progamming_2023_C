@@ -105,7 +105,9 @@ int main(int argc, char** argv) {
 
     // chunk directo
     t = clock();
-    int chunk = (int) N/(num_threads);
+    int chunk = (int) N/(num_threads); 
+
+
     printf("Seccion dynamic paralelize: \n"); 
     printf("\t chunk size: %d \n", chunk);
     #pragma omp parallel for schedule(dynamic, chunk)
